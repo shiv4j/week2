@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<head>
+<title>REGISTRATION FORM</title>dfghdhaqefraeaet
+<script>
+function show()
+{    
+    var name=document.getElementById("username").value;
+    var age=document.getElementById("age").value;
+    var email=document.getElementById("email").value;
+    if(name&&age&&email)
+    {
+        document.getElementById("one").innerText="registered successfully";
+        document.getElementById("two").innerHTML="NAME:"+name+"<br>"+"AGE:"+age+"<br>"+"EMAIL"+email;
+    }
+        else
+        document.getElementById("one").innerText="not registered";
+}
+</script>
+</head>
+<body>
+<form action="#" method="get">
+<H2> REGISTRATION FORM </H2>
+<label>username</label><input type="text" id="username" size="30"><br><br><br>
+<label>age</label><input type="text" id="age" size="30"><br><br><br>
+<label>email</label><input type="text" id="email" size="30"><br><br><br>
+<input type="button" value="submit" onclick="show()"> 
+<input type="reset" value="reset">
+</form>
+<p id="one"></p>
+<br><br><br>
+<p id="two"></p>
+</body>
+</html>
